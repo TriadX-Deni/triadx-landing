@@ -3,93 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TriadX – Viva sua Identidade Híbrida</title>
+  <title>TriadX - Viva sua Realidade Híbrida</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(160deg, #0a0f1f, #1a1333);
-      color: white;
-    }
-    header {
+      background: linear-gradient(to bottom, #0c0c0c, #1f1f1f);
+      color: #fff;
       text-align: center;
+    }
+
+    header {
       padding: 60px 20px 30px;
     }
-    header h1 {
+
+    h1 {
       font-size: 48px;
+      color: #ff4fc1;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 18px;
-      color: #bbb;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 15px 35px;
-      background: #ff267a;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #e0216a;
-    }
-    section {
+
+    p.subtitle {
+      font-size: 20px;
       max-width: 700px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      margin: 0 auto 30px;
     }
-    section h2 {
-      margin-top: 40px;
-      font-size: 26px;
+
+    .btn {
+      background-color: #ff4fc1;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
-    section p {
-      line-height: 1.6;
-      font-size: 17px;
+
+    .btn:hover {
+      background-color: #e43ea8;
     }
+
+    .modes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 60px 20px;
+    }
+
+    .mode {
+      background-color: #1b1b1b;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 280px;
+      box-shadow: 0 0 10px rgba(255, 79, 193, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .mode:hover {
+      transform: translateY(-5px);
+    }
+
+    .mode img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .mode h3 {
+      color: #ff4fc1;
+      margin-bottom: 10px;
+    }
+
     footer {
-      text-align: center;
-      font-size: 13px;
-      color: #888;
       padding: 30px 10px;
-      border-top: 1px solid #333;
-      margin-top: 60px;
+      font-size: 14px;
+      color: #888;
+      background-color: #0a0a0a;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .modes {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>TriadX</h1>
-    <p>Conecte-se. Descubra. Viva sua identidade híbrida.</p>
-    <a class="btn" href="https://whereby.com/eroverso" target="_blank">Entrar Agora</a>
+    <p class="subtitle">
+      A rede social onde você escolhe como aparecer: como você é, com máscara, ou como sombra. <br />
+      Explore ambientes interativos, desafios colaborativos e conexões reais no mundo híbrido.
+    </p>
+    <a href="#" class="btn">Acessar TriadX</a>
   </header>
 
-  <section>
-    <h2>O que é a TriadX?</h2>
-    <p>A TriadX é a nova fronteira das interações sociais — onde você escolhe como quer ser visto: como avatar 3D, com sua imagem real estilizada por IA ou de forma anônima como uma sombra interativa.</p>
-
-    <h2>Ambientes Imersivos</h2>
-    <p>Explore salões de ideias, estúdios de criatividade, praças sensoriais e espaços para conexão íntima. Tudo em um único ambiente, seguro e surpreendente.</p>
-
-    <h2>Modos de Entrada</h2>
-    <ul>
-      <li><strong>Modo Avatar:</strong> interaja com seu personagem 3D.</li>
-      <li><strong>Modo Máscara:</strong> esteja presente com filtros visuais.</li>
-      <li><strong>Modo Sombra:</strong> explore anonimamente com recursos limitados.</li>
-    </ul>
-
-    <h2>Cadastre-se para receber novidades</h2>
-    <form action="https://formsubmit.co/seu@email.com" method="POST">
-      <input type="email" name="email" placeholder="Seu e-mail" required style="padding:10px; width: 70%; border-radius: 5px; border: none;">
-      <button type="submit" class="btn">Cadastrar</button>
-    </form>
+  <section class="modes">
+    <div class="mode">
+      <img src="avatar.jpg" alt="Modo Avatar" />
+      <h3>Modo Avatar</h3>
+      <p>Interaja com um personagem 3D personalizado, imersivo e estilizado para o metaverso.</p>
+    </div>
+    <div class="mode">
+      <img src="mascara.jpg" alt="Modo Máscara" />
+      <h3>Modo Máscara</h3>
+      <p>Entre com filtros visuais em tempo real. Seja quem quiser, com privacidade e presença.</p>
+    </div>
+    <div class="mode">
+      <img src="sombra.jpg" alt="Modo Sombra" />
+      <h3>Modo Sombra</h3>
+      <p>Explore anonimamente. Ideal para quem deseja observar antes de interagir.</p>
+    </div>
   </section>
 
   <footer>
-    © 2025 TriadX • Todos os direitos reservados.
+    © 2025 TriadX · Todos os direitos reservados.
   </footer>
 </body>
 </html>
