@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TriadX</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #000000, #1a1a2e);
-      color: #f0f0f0;
+      background-color: #000;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
@@ -22,7 +22,6 @@
     .subtitle {
       font-size: 1.2em;
       margin-bottom: 30px;
-      color: #dcdcdc;
     }
 
     .cta-button {
@@ -41,51 +40,38 @@
       background-color: #e340bf;
     }
 
-    .image-row {
+    .modes {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      margin: 40px 0;
       flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
     }
 
-    .image-block {
-      max-width: 200px;
+    .mode {
+      background-color: #111;
+      border: 2px solid #ff4fd8;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 15px rgba(255, 79, 216, 0.3);
     }
 
-    .image-block img {
+    .mode img {
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(255, 79, 216, 0.3);
+      border-radius: 10px;
     }
 
-    .image-block p {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #f5f5f5;
-    }
-
-    .section {
-      max-width: 800px;
-      margin: auto;
-      text-align: left;
-      margin-bottom: 50px;
-    }
-
-    .section h2 {
+    .mode h3 {
       color: #ff4fd8;
-      font-size: 1.5em;
-    }
-
-    .section p {
-      line-height: 1.6;
+      margin-top: 15px;
     }
 
     .footer {
-      font-size: 0.8em;
-      color: #999;
       margin-top: 60px;
+      font-size: 0.8em;
+      color: #aaa;
     }
   </style>
 </head>
@@ -97,44 +83,26 @@
   </p>
   <button class="cta-button">Acessar TriadX</button>
 
-  <div class="image-row">
-    <div class="image-block">
-      <img src="Avatar.jpeg" alt="Como você é">
-      <p>Como você é</p>
+  <div class="modes">
+    <div class="mode">
+      <img src="Avatar.jpeg" alt="Modo Avatar">
+      <h3>Modo Avatar</h3>
+      <p>Interaja com um personagem 3D personalizado, imersivo e estilizado para o metaverso.</p>
     </div>
-    <div class="image-block">
-      <img src="Máscara.jpeg" alt="Com máscara">
-      <p>Com máscara</p>
+    <div class="mode">
+      <img src="Máscara.jpeg" alt="Modo Máscara">
+      <h3>Modo Máscara</h3>
+      <p>Entre com filtros visuais em tempo real. Seja quem quiser, com privacidade e presença.</p>
     </div>
-    <div class="image-block">
-      <img src="Sombra.jpeg" alt="Como sombra">
-      <p>Como sombra</p>
+    <div class="mode">
+      <img src="Sombra.jpeg" alt="Modo Sombra">
+      <h3>Modo Sombra</h3>
+      <p>Explore anonimamente. Ideal para quem deseja observar antes de interagir.</p>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>O que é a TriadX?</h2>
-    <p>
-      A TriadX é a nova fronteira das interações sociais — onde você escolhe como quer ser visto:
-      como avatar 3D, com sua imagem real estilizada por IA ou de forma anônima como uma sombra interativa.
-    </p>
-
-    <h2>Ambientes Imersivos</h2>
-    <p>
-      Explore salões de ideias, estúdios de criatividade, praças sensoriais e espaços para conexão íntima.
-      Tudo em um único ambiente, seguro e surpreendente.
-    </p>
-
-    <h2>Modos de Entrada</h2>
-    <ul>
-      <li><strong>Modo Avatar:</strong> interaja com seu personagem 3D.</li>
-      <li><strong>Modo Máscara:</strong> esteja presente com filtros visuais.</li>
-      <li><strong>Modo Sombra:</strong> explore anonimamente com recursos limitados.</li>
-    </ul>
   </div>
 
   <div class="footer">
-    © 2025 TriadX • Todos os direitos reservados.
+    © 2025 TriadX. Todos os direitos reservados.
   </div>
 </body>
 </html>
