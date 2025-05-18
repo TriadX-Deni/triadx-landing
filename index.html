@@ -22,6 +22,12 @@
       margin: 0.5em auto;
       max-width: 800px;
     }
+    .sub-frase {
+      font-style: italic;
+      color: #ddd;
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
     .btn {
       background-color: #ff2ed1;
       border: none;
@@ -44,7 +50,7 @@
     }
     .card {
       background-color: #1c002d;
-      padding: 16px;
+      padding: 20px;
       border-radius: 16px;
       width: 192px;
       transition: transform 0.3s, box-shadow 0.3s;
@@ -91,7 +97,7 @@
 <body>
   <h1>TriadX</h1>
   <p>A rede social onde você decide como será visto: crie seu avatar, use uma máscara estilizada ou interaja como uma sombra anônima.</p>
-  <p><em>Não é sobre esconder quem você é. É sobre revelar quem você quer ser.</em></p>
+  <p class="sub-frase">Não é sobre esconder quem você é. É sobre revelar quem você quer ser.</p>
   <button class="btn" onclick="document.getElementById('modos').scrollIntoView({behavior: 'smooth'})">Acessar TriadX</button>
 
   <section id="modos" class="cards">
