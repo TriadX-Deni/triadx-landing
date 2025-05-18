@@ -2,121 +2,116 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TriadX</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #000000, #141414);
+      background: linear-gradient(to right, #0b0b13, #1a0826);
       color: white;
       text-align: center;
     }
 
+    header {
+      padding: 60px 20px 30px;
+    }
+
     h1 {
-      font-size: 2.5rem;
-      color: #ff40b2;
-      margin-top: 2rem;
+      color: #ff29a8;
+      font-size: 3em;
+      margin-bottom: 15px;
     }
 
-    .intro {
-      margin: 1rem auto 2rem;
-      max-width: 600px;
-      font-size: 1rem;
-      color: #ccc;
+    p.subtitle {
+      font-size: 1.2em;
+      max-width: 750px;
+      margin: 0 auto 10px;
     }
 
-    .btn {
-      background-color: #ff40b2;
+    .cta-button {
+      background-color: #ff29a8;
       color: white;
       border: none;
-      padding: 12px 30px;
-      font-size: 1rem;
       border-radius: 25px;
+      padding: 15px 30px;
+      font-size: 1em;
       cursor: pointer;
-      margin-bottom: 2rem;
+      margin-top: 20px;
     }
 
-    .container {
+    .modes {
       display: flex;
       justify-content: center;
-      gap: 2rem;
       flex-wrap: wrap;
-      margin: 0 auto 3rem;
-      max-width: 1200px;
+      padding: 40px 10px 60px;
+      gap: 30px;
     }
 
     .mode {
-      background-color: #1a1a1a;
-      padding: 1.2rem;
-      border-radius: 16px;
-      width: 280px;
-      box-shadow: 0 0 10px #ff40b250;
-      transition: transform 0.3s;
-    }
-
-    .mode:hover {
-      transform: scale(1.03);
+      background-color: #1a0d25;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 280px;
+      box-shadow: 0 0 15px #ff29a844;
     }
 
     .mode img {
       width: 100%;
-      height: 220px;
+      height: 260px;
       object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      display: block;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
-    .mode h3 {
-      color: #ff40b2;
-      margin-bottom: 0.5rem;
+    .mode h2 {
+      color: #ff29a8;
+      font-size: 1.2em;
+      margin-bottom: 10px;
     }
 
     .mode p {
-      font-size: 0.9rem;
-      color: #ccc;
-      line-height: 1.4;
+      font-size: 0.95em;
+      line-height: 1.4em;
+      color: #ddd;
     }
 
     footer {
-      font-size: 0.8rem;
-      color: #777;
-      margin-bottom: 1rem;
+      background-color: #0e0e15;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>TriadX</h1>
+    <p class="subtitle">A rede social onde você decide como será visto: crie seu avatar, use uma máscara estilizada ou interaja como uma sombra anônima.</p>
+    <p class="subtitle">Explore ambientes imersivos, desafios colaborativos e conexões reais no mundo híbrido.</p>
+    <button class="cta-button">Acessar TriadX</button>
+  </header>
 
-  <h1>TriadX</h1>
-  <p class="intro">
-    A rede social onde você escolhe como aparecer: como você é, com máscara, ou como sombra.<br>
-    Explore ambientes interativos, desafios colaborativos e conexões reais no mundo híbrido.
-  </p>
-  <button class="btn">Acessar TriadX</button>
-
-  <div class="container">
+  <section class="modes">
     <div class="mode">
       <img src="Avatar.jpeg" alt="Modo Avatar">
-      <h3>Modo Avatar</h3>
+      <h2>Modo Avatar</h2>
       <p>Interaja com um personagem 3D personalizado, imersivo e estilizado para o metaverso.</p>
     </div>
-
     <div class="mode">
       <img src="Máscara.jpeg" alt="Modo Máscara">
-      <h3>Modo Máscara</h3>
+      <h2>Modo Máscara</h2>
       <p>Entre com filtros visuais em tempo real. Seja quem quiser, com privacidade e presença.</p>
     </div>
-
     <div class="mode">
       <img src="Sombra.jpeg" alt="Modo Sombra">
-      <h3>Modo Sombra</h3>
+      <h2>Modo Sombra</h2>
       <p>Explore anonimamente. Ideal para quem deseja observar antes de interagir.</p>
     </div>
-  </div>
+  </section>
 
   <footer>
-    © 2025 TriadX. Todos os direitos reservados.
+    &copy; 2025 TriadX. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
