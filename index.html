@@ -1,117 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TriadX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TriadX – Viva sua Identidade Híbrida</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0b0b13, #1a0826);
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0a0a0a, #140020);
+      color: #fff;
       text-align: center;
     }
 
-    header {
-      padding: 60px 20px 30px;
-    }
-
     h1 {
-      color: #ff29a8;
-      font-size: 3em;
-      margin-bottom: 15px;
+      color: #ff33cc;
+      margin-top: 40px;
     }
 
-    p.subtitle {
-      font-size: 1.2em;
-      max-width: 750px;
-      margin: 0 auto 10px;
+    p.main-text {
+      max-width: 800px;
+      margin: 10px auto 25px;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    .cta-button {
-      background-color: #ff29a8;
+    .btn {
+      background-color: #ff33cc;
       color: white;
       border: none;
-      border-radius: 25px;
-      padding: 15px 30px;
-      font-size: 1em;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 30px;
       cursor: pointer;
-      margin-top: 20px;
+      transition: 0.3s;
     }
 
-    .modes {
+    .btn:hover {
+      background-color: #ff0080;
+    }
+
+    .container {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      padding: 40px 10px 60px;
-      gap: 30px;
+      justify-content: center;
+      margin: 40px auto;
+      gap: 20px;
+      max-width: 1100px;
     }
 
-    .mode {
-      background-color: #1a0d25;
-      border-radius: 15px;
+    .card {
+      background-color: #1a001f;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 0, 128, 0.2);
+      width: 280px;
       padding: 20px;
-      max-width: 280px;
-      box-shadow: 0 0 15px #ff29a844;
     }
 
-    .mode img {
+    .card img {
       width: 100%;
-      height: 260px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      border-radius: 8px;
     }
 
-    .mode h2 {
-      color: #ff29a8;
-      font-size: 1.2em;
-      margin-bottom: 10px;
+    .card h3 {
+      margin-top: 15px;
+      color: #ff33cc;
     }
 
-    .mode p {
-      font-size: 0.95em;
-      line-height: 1.4em;
+    .card p {
+      font-size: 15px;
       color: #ddd;
     }
 
     footer {
-      background-color: #0e0e15;
+      margin-top: 50px;
       padding: 20px;
-      font-size: 0.9em;
+      font-size: 14px;
       color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TriadX</h1>
-    <p class="subtitle">A rede social onde você decide como será visto: crie seu avatar, use uma máscara estilizada ou interaja como uma sombra anônima.</p>
-    <p class="subtitle">Explore ambientes imersivos, desafios colaborativos e conexões reais no mundo híbrido.</p>
-    <button class="cta-button">Acessar TriadX</button>
-  </header>
+  <h1>TriadX</h1>
+  <p class="main-text">
+    A rede social onde você decide como será visto: crie seu avatar, use uma máscara estilizada ou interaja como uma sombra anônima.
+    <br><br>
+    Explore ambientes imersivos, desafios colaborativos e conexões reais no mundo híbrido.
+  </p>
+  <button class="btn">Acessar TriadX</button>
 
-  <section class="modes">
-    <div class="mode">
+  <div class="container">
+    <div class="card">
       <img src="Avatar.jpeg" alt="Modo Avatar">
-      <h2>Modo Avatar</h2>
+      <h3>Modo Avatar</h3>
       <p>Interaja com um personagem 3D personalizado, imersivo e estilizado para o metaverso.</p>
     </div>
-    <div class="mode">
+
+    <div class="card">
       <img src="Máscara.jpeg" alt="Modo Máscara">
-      <h2>Modo Máscara</h2>
+      <h3>Modo Máscara</h3>
       <p>Entre com filtros visuais em tempo real. Seja quem quiser, com privacidade e presença.</p>
     </div>
-    <div class="mode">
+
+    <div class="card">
       <img src="Sombra.jpeg" alt="Modo Sombra">
-      <h2>Modo Sombra</h2>
+      <h3>Modo Sombra</h3>
       <p>Explore anonimamente. Ideal para quem deseja observar antes de interagir.</p>
     </div>
-  </section>
+  </div>
 
   <footer>
-    &copy; 2025 TriadX. Todos os direitos reservados.
+    © 2025 TriadX. Todos os direitos reservados.
   </footer>
 </body>
 </html>
