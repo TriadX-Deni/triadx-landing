@@ -2,129 +2,139 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TriadX - Viva sua Realidade Híbrida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TriadX</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #0c0c0c, #1f1f1f);
-      color: #fff;
+      background: linear-gradient(to bottom, #000000, #1a1a2e);
+      color: #f0f0f0;
       text-align: center;
-    }
-
-    header {
-      padding: 60px 20px 30px;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 48px;
-      color: #ff4fc1;
-      margin-bottom: 10px;
+      color: #ff4fd8;
+      font-size: 3em;
     }
 
-    p.subtitle {
-      font-size: 20px;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #dcdcdc;
     }
 
-    .btn {
-      background-color: #ff4fc1;
+    .cta-button {
+      background-color: #ff4fd8;
       color: white;
-      padding: 14px 28px;
+      padding: 12px 28px;
       border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: background 0.3s ease;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 50px;
+      transition: background-color 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #e43ea8;
+    .cta-button:hover {
+      background-color: #e340bf;
     }
 
-    .modes {
+    .image-row {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
-      margin: 60px 20px;
+      margin: 40px 0;
+      flex-wrap: wrap;
     }
 
-    .mode {
-      background-color: #1b1b1b;
-      border-radius: 12px;
-      padding: 20px;
-      max-width: 280px;
-      box-shadow: 0 0 10px rgba(255, 79, 193, 0.2);
-      transition: transform 0.3s ease;
+    .image-block {
+      max-width: 200px;
     }
 
-    .mode:hover {
-      transform: translateY(-5px);
-    }
-
-    .mode img {
+    .image-block img {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(255, 79, 216, 0.3);
     }
 
-    .mode h3 {
-      color: #ff4fc1;
-      margin-bottom: 10px;
+    .image-block p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #f5f5f5;
     }
 
-    footer {
-      padding: 30px 10px;
-      font-size: 14px;
-      color: #888;
-      background-color: #0a0a0a;
+    .section {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 50px;
     }
 
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 36px;
-      }
+    .section h2 {
+      color: #ff4fd8;
+      font-size: 1.5em;
+    }
 
-      .modes {
-        flex-direction: column;
-        align-items: center;
-      }
+    .section p {
+      line-height: 1.6;
+    }
+
+    .footer {
+      font-size: 0.8em;
+      color: #999;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>TriadX</h1>
-    <p class="subtitle">
-      A rede social onde você escolhe como aparecer: como você é, com máscara, ou como sombra. <br />
-      Explore ambientes interativos, desafios colaborativos e conexões reais no mundo híbrido.
+  <h1>TriadX</h1>
+  <p class="subtitle">
+    A rede social onde você escolhe como aparecer: como você é, com máscara, ou como sombra.<br>
+    Explore ambientes interativos, desafios colaborativos e conexões reais no mundo híbrido.
+  </p>
+  <button class="cta-button">Acessar TriadX</button>
+
+  <div class="image-row">
+    <div class="image-block">
+      <img src="Avatar.jpeg" alt="Como você é">
+      <p>Como você é</p>
+    </div>
+    <div class="image-block">
+      <img src="Máscara.jpeg" alt="Com máscara">
+      <p>Com máscara</p>
+    </div>
+    <div class="image-block">
+      <img src="Sombra.jpeg" alt="Como sombra">
+      <p>Como sombra</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>O que é a TriadX?</h2>
+    <p>
+      A TriadX é a nova fronteira das interações sociais — onde você escolhe como quer ser visto:
+      como avatar 3D, com sua imagem real estilizada por IA ou de forma anônima como uma sombra interativa.
     </p>
-    <a href="#" class="btn">Acessar TriadX</a>
-  </header>
 
-  <section class="modes">
-    <div class="mode">
-      <img src="avatar.jpg" alt="Modo Avatar" />
-      <h3>Modo Avatar</h3>
-      <p>Interaja com um personagem 3D personalizado, imersivo e estilizado para o metaverso.</p>
-    </div>
-    <div class="mode">
-      <img src="mascara.jpg" alt="Modo Máscara" />
-      <h3>Modo Máscara</h3>
-      <p>Entre com filtros visuais em tempo real. Seja quem quiser, com privacidade e presença.</p>
-    </div>
-    <div class="mode">
-      <img src="sombra.jpg" alt="Modo Sombra" />
-      <h3>Modo Sombra</h3>
-      <p>Explore anonimamente. Ideal para quem deseja observar antes de interagir.</p>
-    </div>
-  </section>
+    <h2>Ambientes Imersivos</h2>
+    <p>
+      Explore salões de ideias, estúdios de criatividade, praças sensoriais e espaços para conexão íntima.
+      Tudo em um único ambiente, seguro e surpreendente.
+    </p>
 
-  <footer>
-    © 2025 TriadX · Todos os direitos reservados.
-  </footer>
+    <h2>Modos de Entrada</h2>
+    <ul>
+      <li><strong>Modo Avatar:</strong> interaja com seu personagem 3D.</li>
+      <li><strong>Modo Máscara:</strong> esteja presente com filtros visuais.</li>
+      <li><strong>Modo Sombra:</strong> explore anonimamente com recursos limitados.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    © 2025 TriadX • Todos os direitos reservados.
+  </div>
 </body>
 </html>
